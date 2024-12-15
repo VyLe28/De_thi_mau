@@ -1,0 +1,246 @@
+/* Global styles */
+* {
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+/* Body */
+body {
+    margin: 0 auto;
+}
+/* Logo */
+.logo {
+    width: 50%;
+}
+.logo img {
+    width: 100%;
+    float: left;
+    object-fit: cover;
+}
+/* Hotline */
+.hotline {
+    width: 50%;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(81, 231, 98);
+    -webkit-text-stroke: 2px black;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+/* Navigation */
+nav {
+    background: linear-gradient(to bottom, rgb(255, 174, 0), rgb(0, 255, 247));
+    border: 1px solid;
+    clear: both;
+    height: 65px;
+    box-sizing: border-box;
+}
+ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+li {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding: 0 10px;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Impact;
+    color: white;
+    -webkit-text-stroke: rgb(0, 0, 0) 1px;
+}
+li:hover {
+    background: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgb(253, 14, 1));
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: rgb(255, 255, 255) 1px;
+}
+
+li:nth-child(2):hover {
+    background: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgb(253, 106, 1));
+}
+
+li:nth-child(3):hover {
+    background: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgb(219, 253, 1));
+}
+
+li:nth-child(4):hover {
+    background: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgb(156, 1, 253));
+}
+
+li:nth-child(5):hover {
+    background: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgb(18, 1, 253));
+}
+
+nav .menu-toggle {
+    display: none;
+}
+
+/* Hotnews section */
+.hotnews {
+    display: flex;
+    background-color: rgb(233, 209, 167);
+}
+
+/* News image section */
+.imgnews {
+    text-align: center;
+    overflow: hidden;
+}
+
+.imgnews img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* News text section */
+.textnews {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.textnews .title {
+    padding-left: 10px;
+    background-color: rgb(233, 209, 167);
+    overflow: hidden;
+}
+
+.textnews .content {
+    box-sizing: border-box;
+    border: 1px dotted;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: rgb(231, 112, 43);
+    overflow: hidden;
+}
+
+.textnews .frmcomment {
+    box-sizing: border-box;
+    border: 1px dotted;
+    border-radius: 5px;
+    padding: 5px 0;
+    background-color: rgb(17, 211, 211);
+    overflow: hidden;
+}
+
+.frmcomment form {
+    padding-left: 10px;
+}
+
+/* News items */
+.news {
+    display: flex;
+    flex-wrap: wrap; /* các phần tử con dc bọc xuống dòng nếu không gian không đủ */
+    clear: both;
+}
+
+.item {
+    background-color: rgb(212, 231, 5);
+    border: 1px solid rgb(87, 87, 87);
+    box-sizing: border-box;
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.item img:hover {
+    cursor: pointer;
+}
+
+.item .title {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form inputs */
+input, textarea {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+textarea {
+    padding: 10px;
+}
+
+#submit {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+#submit:hover {
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+    color: black;
+}
+
+#com:hover, #email:hover, #rate:hover {
+    background-color: rgb(253, 205, 121);
+}
+
+/* Content styling */
+.forcontent {
+    background: linear-gradient(175deg, rgb(0, 225, 113), rgb(235, 5, 58));
+    color: rgb(246, 234, 145);
+}
+
+.forcontent:hover {
+    cursor: pointer;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 529px) {
+    .wrapper, .hotnews, .news {
+        flex-direction: column;
+    }
+
+    .textnews, .imgnews, .item img {
+        height: auto;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 530px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media screen and (min-width: 800px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
