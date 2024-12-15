@@ -9,7 +9,7 @@ body {
     background-color: black;
 }
 .main {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 /* Logo */
@@ -152,10 +152,13 @@ nav .menu-toggle {
     display: flex;
     /* các phần tử con dc bọc xuống dòng nếu không gian không đủ */
     clear: both;
-    gap: 20px;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between; 
 }
 
 .item {
+    flex: 1 1 calc(25% - 1rem); /* Chiếm 25% chiều rộng, trừ đi khoảng gap */
     border: 1px solid rgb(87, 87, 87);
     box-sizing: border-box;
     display: flex;
