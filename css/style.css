@@ -40,10 +40,8 @@ header {
 /* Navigation */
 nav {
     background: linear-gradient(to bottom, rgb(255, 174, 0), rgb(0, 255, 247));
-    border: 1px solid;
     clear: both;
     height: 65px;
-    box-sizing: border-box;
 }
 ul {
     display: flex;
@@ -65,12 +63,14 @@ li {
     font-family: Impact;
     color: white;
     -webkit-text-stroke: rgb(0, 0, 0) 1px;
-    border-right: 1px dashed black;
+    border-right: 1px solid #cdcdcd;
 }
 li:hover {
     background: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgb(253, 14, 1));
     color: rgb(0, 0, 0);
     -webkit-text-stroke: rgb(255, 255, 255) 1px;
+    box-sizing: border-box;
+    border: 1px dashed black;
 }
 
 li:nth-child(2):hover {
