@@ -152,7 +152,8 @@ nav .menu-toggle {
     display: flex;
     /* các phần tử con dc bọc xuống dòng nếu không gian không đủ */
     clear: both;
-    gap: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .item {
