@@ -52,13 +52,9 @@ ul {
 li {
     display: flex;
     align-items: center;
-    font-size: 25px;
     padding: 0 10px;
     height: 80%;
     overflow: hidden;
-    text-transform: uppercase;
-    font-family: Impact;
-    color: white;
     -webkit-text-stroke: rgb(0, 0, 0) 1px;
     border-right: 2px solid #414141;
     justify-content: center;
@@ -68,10 +64,21 @@ li:last-child {
 }
 li:hover {
     background: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgb(253, 14, 1));
-    color: rgb(0, 0, 0);
-    -webkit-text-stroke: rgb(255, 255, 255) 1px;
     box-sizing: border-box;
     border: 1px dashed black;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: rgb(0, 0, 0) 1px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: Impact;
+}
+a:hover {
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: rgb(255, 255, 255) 1px;
 }
 
 li:nth-child(2):hover {
