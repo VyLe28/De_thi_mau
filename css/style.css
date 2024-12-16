@@ -61,6 +61,7 @@ li {
     color: white;
     -webkit-text-stroke: rgb(0, 0, 0) 1px;
     border-right: 2px solid #414141;
+    justify-content: center;
 }
 li:last-child {
     border-right: none;
