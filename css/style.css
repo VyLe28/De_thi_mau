@@ -21,6 +21,9 @@ body {
     float: left;
     object-fit: cover;
 }
+.logo img:hover {
+    cursor: pointer;
+}
 /* Hotline */
 .hotline {
     background-color: white;
