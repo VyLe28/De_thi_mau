@@ -9,7 +9,7 @@ body {
     background-color: black;
 }
 .main {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 /* Logo */
@@ -35,7 +35,6 @@ body {
 }
 header {
     background-color: white;
-    overflow: hidden;
 }
 /* Navigation */
 nav {
@@ -103,25 +102,29 @@ nav .menu-toggle {
 }
 
 /* News image section */
-.imgnews {
-    overflow: hidden;
-    object-fit: cover;
-}
 
 .imgnews img {
-    object-fit: cover;
-    height: 100%;
+    width: 100%;
 }
 
 /* News text section */
 .textnews {
     font-size: 20px;
+    border: 2px solid rgb(1, 1, 255);
+    box-sizing: border-box;
+}
+
+.imgnews, .textnews {
+    display: flex; /* Đặt mỗi phần thành flex container */
+    flex-direction: column; /* Nội dung bên trong theo chiều dọc */
 }
 
 .textnews .title {
     padding-left: 10px;
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 156, 246));
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .textnews .content {
@@ -131,6 +134,8 @@ nav .menu-toggle {
     padding-left: 20px;
     background: linear-gradient(to bottom, rgb(255, 202, 200), rgb(0, 255, 242));
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .textnews .frmcomment {
@@ -140,6 +145,7 @@ nav .menu-toggle {
     padding: 5px 0;
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 128, 0));
     overflow: hidden;
+    flex-grow: 1;
 }
 
 .frmcomment form {
@@ -162,6 +168,8 @@ nav .menu-toggle {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    border: 2px solid yellow;
 }
 
 .item img {
